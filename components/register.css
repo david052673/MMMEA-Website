@@ -68,15 +68,10 @@ a{
     background:rgba(189, 183, 185, 0.5);
     width:100%
  }
-
-
-
-
-
- .lin{
+ h2{
     display: inline;
     margin-right: -0.1em;
-    color:red
+    
  }
  html, body {
     margin: 0;
@@ -85,3 +80,10 @@ a{
     height: 100%;
     }
 
+.lin{
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  color:rgb(142, 21, 21);
+  text-decoration: underline;
+}

@@ -73,3 +73,10 @@ a{
     width: 100%;
     height: 100%;
     }
+  body{
+    background:url("/components/images/Mmmea 4.png");
+    background-size:cover
+  }
+.hh1{
+    color:rgb(236, 2, 53);
+  }
