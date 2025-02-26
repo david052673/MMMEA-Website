@@ -24,7 +24,7 @@ div{
     padding-left:3% ;  
     margin-right:2px;
     flex:1.5;
-    gap:120px;
+    gap:30px;
     color:green;
   }
 
@@ -45,7 +45,7 @@ div{
   }
 
 a{
-    padding-right:45px;
+    padding-right:25px;
  }
 
 a:active {
