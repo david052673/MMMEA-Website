@@ -47,7 +47,7 @@ div{
   }
 
 a{
-    padding-right:25px;
+    padding-right:23px;
  }
 
 a:active {
@@ -64,8 +64,10 @@ a{
     transition: color 0.3s ease;
  }
  .f{
-    background:rgba(189, 183, 185, 0.5);
-    width:100%
+  background:white;
+  width:100%;
+  position:fixed;
+  top:0;
  }
  html, body {
     margin: 0;

@@ -13,13 +13,15 @@ nav{
     
     display:flex;
     background:rgba(239, 239, 245, 0.5); 
-    width:100%
+    full-width:100%;
     }
 
-div{
+.div{
     display:flex;  
    }
-
+.d{
+  display:flex;
+}
 .b{
     display:flex;
     align-items: center;
@@ -47,7 +49,7 @@ div{
   }
 
 a{
-    padding-right:25px;
+    padding-right:23px;
  }
 
 a:active {
@@ -64,19 +66,38 @@ a{
     transition: color 0.3s ease;
  }
  .f{
-    background:rgba(189, 183, 185, 0.5);
-    width:100%
+  background:white;
+  width:100%;
+  position:fixed;
+  top:0;
  }
+
  html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     }
-  body{
-    background:url("/components/images/Mmmea 4.png");
-    background-size:cover
-  }
+  
 .hh1{
-    color:rgb(236, 2, 53);
+    color:hsl(242, 76.60%, 58.00%);
   }
+
+.imagz{
+    width:100%; 
+    margin-top:6%;
+     
+    
+  }
+.mebimagz{
+  width:100%; 
+  height:20%;
+  
+}
+
+.section1{
+  margin-top:50px;
+}
+
+
+
