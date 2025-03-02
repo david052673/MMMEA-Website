@@ -31,6 +31,8 @@ nav{
     flex:1.5;
     gap:120px;
     color:green;
+    font-size:16px;
+
   }
 
 .a{
@@ -39,12 +41,14 @@ nav{
 
   }
 .c{
-   padding:1% 
+   padding:1%;
+   height:65px;
   }
 
 .d{
     margin-right: auto;
     flex:1.5;
+    font-size:12px;
     
   }
 
@@ -69,7 +73,7 @@ a{
   background:white;
   width:100%;
   position:fixed;
-  top:0;
+  top:22px;
   z-index: 1000;
  }
 
@@ -98,6 +102,15 @@ a{
 
 .section1{
   margin-top:50px;
+}
+.topspace{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  background-color:rgb(10, 137, 33);
+  
 }
 
 
