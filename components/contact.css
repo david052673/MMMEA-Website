@@ -80,8 +80,8 @@ a{
     width: 100%;
     height: 100%;
     }
-  .contact{
-    margin-top:20%;
+  .cont{
+    margin-top:35px;
   }
   .topspace{
     position: fixed;
@@ -92,3 +92,74 @@ a{
     background-color:rgb(10, 137, 33);
     
   }
+  /*....resposiveness...*/
+ /*...humburger stlying...*/
+ .hamburger-menu {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--black);
+}
+
+@media (max-width: 1509px) {
+  .hamburger-menu {
+      display: block;
+  }
+  .hamburger {
+      display: block;
+  }
+  .b {
+      display: none;
+      flex-direction: column;
+  }
+  .b.open {
+      display: flex;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+nav, .d, .b, .topspace {
+  flex-wrap: wrap;
+}
+
+
+  
+/*... Responsive styles.... */
+@media (max-width: 1920px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1920px) {
+  .a {
+
+    font-size:10px;
+    flex-direction: column;
+  }}
+  
+  @media (max-width: 1920px) {
+    .c {
+    height:50px;
+    }}
+  @media (max-width: 1920px) {
+      .cont {
+       padding-top:40px;
+      }
+    }
