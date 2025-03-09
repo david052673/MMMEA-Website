@@ -141,8 +141,6 @@ body {
 nav, .d, .b, .topspace {
   flex-wrap: wrap;
 }
-
-
   
 /*... Responsive styles.... */
 @media (max-width: 1920px) {
@@ -168,14 +166,8 @@ nav, .d, .b, .topspace {
       }
     }
 
-  .sacj{
+
   
-  }
-  @media (max-width: 1850px) {
-    .sacj{
-     height:677px;
-    }
-  }
 
 
   /*...additional styling for nav links on small screens...*/
@@ -207,3 +199,84 @@ nav, .d, .b, .topspace {
     text-align: left;
     color:white;
   }}
+  /*------body stlying....*/
+
+
+@media (max-width: 768px) {
+    .sacj {
+         
+        height: auto; 
+        object-fit: contain;
+    }}
+
+
+   /* .slideshow {
+      display: block;
+      margin: 0 auto; 
+      max-width: 100%;
+      position: relative;
+      width: 100vw;
+      height: 447px;
+      object-fit: fill; 
+      overflow: hidden; 
+  }
+  
+  .sacj {
+    position:absolute;
+      width: 100vw;
+      height: 447px; 
+      object-fit: fill; 
+      transition: opacity 1s ease-in-out; 
+      opacity: 0;
+  }
+  
+  .sacj.active {
+      opacity: 1; 
+  }*/
+  .slideshow {
+    position: relative;
+    width: 100vw; /* Covers full screen width */
+    height: 447px; /* Fixed height for slideshow */
+    overflow: hidden; /* Ensures no overflow from images */
+}
+
+.sacj {
+    position: absolute; /* Allows stacking images on top of each other */
+    width: 100%; /* Full width of the slideshow container */
+    height: 100%; /* Matches the container's height */
+    object-fit: fill; /* Ensures the image covers the space without distortion */
+    opacity: 0; /* Initially hide all images */
+    transition: opacity 1s ease-in-out; /* Smooth fading effect */
+}
+
+.sacj.active {
+    opacity: 1; /* Show the active image */}
+
+    /* Slideshow navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  font-size: 24px; /* Adjust size */
+  color: white; /* Button color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure buttons appear above images */
+  border-radius: 5px;
+}
+
+/* Left button (Previous) */
+.prev {
+  left: 10px; /* Position at far left */
+}
+
+/* Right button (Next) */
+.next {
+  right: 10px; /* Position at far right */
+}
+
+/* Add hover effect for buttons */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */}
