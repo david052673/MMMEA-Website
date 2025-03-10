@@ -107,7 +107,7 @@ nav{
 .section1{
   margin-top:30px;
   display:flex;
-  felx-direction:column;
+  direction:column;
 }
 .topspace{
   position: fixed;
@@ -187,7 +187,7 @@ nav, .d, .b, .topspace {
     }}
   @media (max-width: 768px) {
       .imagz {
-       padding-top:40px;
+       padding-top:55px;
        width:100%;
        height:227px;
        object-fit:fill;
@@ -228,3 +228,31 @@ nav, .d, .b, .topspace {
     }
 
 
+
+
+    .vm{
+      color:blue;
+      margin-left:42px;
+    }
+    .vision{
+      display:flex;
+      direction:column;
+      align-items:center;
+      background:rgb(64, 64, 113);;
+    }
+    .div11{
+      margin:20px;
+      margin-left:5%;
+    
+    }
+    .div22{
+      margin:50px;
+      margin-left:15%;
+    }
+    .div33{
+      margin-left:15%;
+    }
+    .pp2{
+      font-size:25px;
+      color:white;
+    }
