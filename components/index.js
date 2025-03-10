@@ -25,6 +25,10 @@ function handleTouchMove(evt) {
     evt.preventDefault();
   }
 }
+function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('open');
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   let slideIndex = 0; // Initialize the slide index

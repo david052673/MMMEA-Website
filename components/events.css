@@ -47,18 +47,18 @@ div{
     
   }
 
-a{
+.aa{
     padding-right:23px;
  }
 
-a:active {
+.aa:active {
     color: red;
  }
-a:hover{
+.aa:hover{
     color:red;
 }
 
-a{
+.aa{
     text-decoration: none;
     position: relative;
     padding-bottom: 5px;

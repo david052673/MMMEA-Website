@@ -50,18 +50,18 @@ div{
     
   }
 
-a{
+.aa{
     padding-right:23px;
  }
 
-a:active {
+.aa:active {
     color: red;
  }
-a:hover{
+.aa:hover{
     color:red;
 }
 
-a{
+.aa{
     text-decoration: none;
     position: relative;
     padding-bottom: 5px;
@@ -72,6 +72,7 @@ a{
     width:100%;
     position:fixed;
     top:22px;
+    z-index:7000;
     
  }
 html, body {
@@ -83,8 +84,8 @@ html, body {
   
     }
 
-.text{
-  margin-top:50px;
+.slideshow{
+  margin-top:96px;
 }
 .topspace{
   position: fixed;
@@ -93,11 +94,13 @@ html, body {
   right: 0;
   height: 22px;
   background-color:rgb(10, 137, 33);
+  z-index:7000;
   
 } 
 /*....resposiveness...*/
  /*...humburger stlying...*/
- .hamburger-menu {
+
+.hamburger-menu {
   display: none;
   position: absolute;
   right: 20px;
@@ -105,7 +108,7 @@ html, body {
 }
 
 .hamburger {
-  display: none;
+  display:none;
   font-size: 24px;
   cursor: pointer;
   background: none;
@@ -122,11 +125,10 @@ html, body {
   }
   .b {
       display: none;
-      flex-direction:row;
+      flex-direction: column;
   }
   .b.open {
       display: flex;
-      flex-direction:row;
   }
 }
 
@@ -200,16 +202,7 @@ nav, .d, .b, .topspace {
     color:white;
   }}
   /*------body stlying....*/
-
-
-@media (max-width: 768px) {
-    .sacj {
-         
-        height: auto; 
-        object-fit: contain;
-    }}
-
-
+ 
    /* .slideshow {
       display: block;
       margin: 0 auto; 
@@ -243,12 +236,17 @@ nav, .d, .b, .topspace {
 .sacj {
     position: absolute; /* Allows stacking images on top of each other */
     width: 100%; /* Full width of the slideshow container */
-    height: 100%; /* Matches the container's height */
+    height: 447px; /* Matches the container's height */
     object-fit: fill; /* Ensures the image covers the space without distortion */
     opacity: 0; /* Initially hide all images */
     transition: opacity 1s ease-in-out; /* Smooth fading effect */
 }
-
+@media (max-width: 768px) {
+  .sacj {
+    height:207px;
+    width:100%;
+    object-fit:fill; 
+  }}
 .sacj.active {
     opacity: 1; /* Show the active image */}
 
@@ -280,3 +278,8 @@ nav, .d, .b, .topspace {
 /* Add hover effect for buttons */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */}
+@media(max-width:768px){
+  .prev, .next{
+    top:113px;
+  }
+}
