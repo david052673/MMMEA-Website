@@ -1,0 +1,495 @@
+:root{
+    --white: #FFFFFF;
+    --grey: #979797;
+    --red: #FF6565;
+    --black: #071629;
+    --green:rgb(7, 152, 84);
+    --blue:rgb(5, 5, 42);
+    }
+
+
+....../*Navigation styling*/........
+nav{
+    
+    display:flex;
+    background:rgba(239, 239, 245, 0.5); 
+    width:100%
+    }
+
+div{
+    display:flex;  
+   }
+
+.b{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:3% ;  
+    margin-right:2px;
+    flex:1.5;
+    gap:120px;
+    color:green;
+    font-size:16px;
+  }
+
+.a{
+    line-height: 0.4;
+    color:black;
+
+  }
+.c{
+   padding:1%;
+   height:65px;
+  }
+
+.d{
+    margin-right: auto;
+    flex:1.5;
+    font-size:12px;
+    
+  }
+
+.aa{
+    padding-right:23px;
+ }
+
+.aa:active {
+    color: red;
+ }
+.aa:hover{
+    color:red;
+}
+
+.aa{
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+ }
+ .f{
+  background:white;
+  width:100%;
+  position:fixed;
+  top:22px;
+  z-index: 1000;
+ }
+ 
+   /*-----------styling about us nav link------*/
+   .hover-word {
+    position: relative;
+    color: rgb(32, 47, 136);
+    text-decoration: none;
+    cursor: pointer;
+    padding-right:23px;
+  }
+  
+  .hover-word{
+    padding-right:23px;
+  }
+  
+  .hover-word:active {
+    color: red;
+  }
+  .hover-word:hover{
+    color:red;
+  }
+  
+  .hover-word{
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  .popup {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: -30px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 17000;
+    width:122%;
+    height:207%;
+  
+  }
+  
+  .hover-word:hover .popup {
+    display: block;
+  }
+  
+  .popup a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+    margin: 5px 0; 
+    font-size:16px;
+  }
+  .popup a:hover{
+    color:red;
+  }
+
+
+  
+ html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+  .topspace{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 22px;
+    background-color:rgb(10, 137, 33);
+    z-index:17000;
+    
+  }
+  /*....resposiveness...*/
+ /*...humburger stlying...*/
+ .hamburger-menu {
+  display: none;
+  right: 20px;
+  top: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--black);
+}
+
+@media (max-width: 1509px) {
+  .hamburger-menu {
+      display: block;
+  }
+  .hamburger {
+      display: block;
+  }
+  .b {
+      display: none;
+      flex-direction: column;
+  }
+  .b.open {
+      display: flex;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+nav, .d, .b, .topspace {
+  flex-wrap: wrap;
+}
+
+
+  
+/*... Responsive styles.... */
+@media (max-width: 1920px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1920px) {
+  .a {
+
+    font-size:10px;
+    flex-direction: column;
+  }}
+  
+  @media (max-width: 1920px) {
+    .c {
+    height:30px;
+    }}
+    @media (max-width:768px) {
+      .a {
+    
+        font-size:6px;
+        flex-direction: column;
+      }
+      .hamburger{
+        top:12%;
+        margin-top:6px;
+        font-size:22px;
+        margin-right:21px;
+          
+      }}
+      
+  /*...additional styling for nav links on small screens...*/
+  @media (max-width: 1509px) {
+    .b.open {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 60px; 
+      right: 20px;
+      background:black;
+      padding: 10px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+      z-index: 7000;
+      
+    }
+    
+    .b.open h3 {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .b.open a {
+      font-size: 12px;
+      padding: 5px 0;
+      display: block;
+      width: 100%;
+      text-align: left;
+      color:white;
+    }}
+
+    .image-container {
+        position: relative;
+        display: inline-block; /* Maintains the container's inline layout */
+      }
+      
+      /* Keeps the image unaffected and properly positioned */
+      .cont {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 89px; /* Ensures your custom positioning */
+      }
+      
+      /* Overlay with bottom-to-top fade */
+      .image-container .overlay {
+        position: absolute;
+        bottom: 0; /* Stays anchored to the bottom of the container */
+        left: 0;
+        width: 100%;
+        height: 77%; /* Full coverage of the image */
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)138%);
+        pointer-events: none; /* Prevent interaction issues */
+      }
+      @media (max-width: 768px) {
+        .cont {
+          object-fit:fill;
+         margin-top:63px;
+         width:524px;
+         height:149px;
+        }}
+ .registeroverlaytext{
+  position:relative;
+  top:-164px;
+  color:white;
+ }
+ @media (max-width: 768px) {
+  .registeroverlaytext {
+   font-size:18px;
+   top:-118px;
+  }}@media (max-width:768px) {
+
+    .hamburger{
+      margin-top:-7px;
+      font-size:22px;
+      margin-right:10px;
+        
+    }
+  }
+  .registrationbody{
+    margin-top:-60px;
+    display:block;
+  }
+  .registrationtext{
+    font-family: Arial, sans-serif;
+    font-size:20px;
+  }
+  .treasuree{
+    color: rgb(10, 28, 148)
+  }
+  .approval{
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)98%);
+    height:371px;
+  }
+  .approvaltext{
+    color:white;
+  }
+  .approvalschedulelink{
+    text-decoration:none;
+    color:rgb(21, 41, 167);
+
+  }
+  .approvalschedulelink:hover{
+  color:red;
+    
+  }
+  .membershipform{
+    border-radius:12px;
+    border:3px solid black;
+  }
+  .membershipformpic{
+    flex:1;
+    margin-right:8%;
+  }
+.membershipform{
+border-radius:62px;
+height:384px;
+width:334px;
+border: 5px solid blue;
+margin-right:7%;
+
+}
+.membershipformpic {
+position: relative;
+width:334px; /* Set width for the image container */
+}
+
+.membershipformpic, .membershipform {
+width: 534px; /* Make the image fill the container */
+height: 357px;
+}
+
+.overlay2{
+position: absolute;
+top: 0;
+left: 0;
+width: 539px;
+height: 365px;
+background-color: rgba(10, 8, 14, 0.5); /* Semi-transparent black overlay */
+opacity: 0; /* Initially invisible */
+transition: opacity 0.3s ease; /* Smooth fade effect */
+border-radius:62px;
+}
+
+.membershipformpic:hover .overlay2 {
+opacity: 5; /* Make the overlay visible on hover */
+}
+
+.overlay-text {
+color: white;
+font-size: 20px;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size:29px;
+}
+.overlay-text:hover{
+  font-size:39px;
+}
+
+
+.thinline {
+  text-align: center;
+  position: relative;
+  top: 5%;
+  padding: 20px;
+}
+
+.thinline::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centers the red line vertically */
+  left: 0;
+}
+
+.thinlinelogo {
+  width: 30px;
+  height: 30px;
+  background: url('files/thinlinelogo.jpg') no-repeat center center;
+  background-size: contain;
+  position: absolute; /* Absolute positioning to align with the line */
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%); /* Centers the diamond on the red line */
+  }
+  .footer{
+    display:flex;
+    background:black;
+    margin-top:56px;
+    
+  }
+  .footer1{
+    flex:1;
+   display:block;
+   font-size:22px;
+   color:white;
+   margin-left:1%;
+   
+  }
+  @media(max-width: 768px){
+    .footer1{
+     font-size:18px;
+    
+  }
+
+  .footer{
+    display:block;
+  }}
+  .footer2{
+    flex:1;
+   display:block;
+   color:white;
+   
+  }
+  .a12x{
+    text-decoration:none;
+    font-size:22px;
+    color:white;
+  }
+  .a12x:hover{
+    color:red
+  }
+  @media(max-width: 768px){
+    .a12x{
+     font-size:18px;
+     margin-left:2%;
+    }
+  }
+.footerpage{
+  display:flex;
+  background:rgba(226, 21, 21, 0.89);
+}
+.footerpart{
+  flex:6;
+  margin-left:1%;
+}
+.footertext{
+  font-size:17px;
+  color:black;
+}
+.social-icons {
+  flex:1;
+  gap: 25px;
+  list-style: none;
+  padding-top:1%;
+  margin-left:10%;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color:white;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color:blue;
+}

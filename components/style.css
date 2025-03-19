@@ -1,0 +1,828 @@
+......../* colors */.........
+:root{
+    --white: #FFFFFF;
+    --grey: #979797;
+    --red: #FF6565;
+    --black: #071629;
+    --green:rgb(7, 152, 84);
+    --blue:rgb(5, 5, 42);
+    }
+
+....../*Navigation styling*/........
+nav{
+    display:flex;
+    position:fixed;
+  }
+
+div{
+    display:flex;  
+   }
+
+   @media (max-width: 768px){
+   .b{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:3% ;  
+    margin-right:2px;
+    flex:1.5;
+    gap:30px;
+    color:green;
+    font-size:16px;
+
+  }}
+
+.a{
+    line-height: 0.4;
+    color:black;
+
+
+  }
+.c{
+   padding:1%;
+   height:65px;
+  }
+
+.d{
+    margin-right: auto;
+    flex:1.5;
+    font-size:12px;
+    
+  }
+
+.aa{
+    padding-right:23px;
+ }
+
+.aa:active {
+    color: red;
+ }
+.aa:hover{
+    color:red;
+}
+
+.aa{
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+ }
+ .f{
+    background:white;
+    width:100%;
+    position:fixed;
+    top:22px;
+    z-index:17000;
+    
+ }
+ /*-----------styling about us nav link------*/
+ .hover-word {
+  position: relative;
+  color: rgb(32, 47, 136);
+  text-decoration: none;
+  cursor: pointer;
+  padding-right:23px;
+}
+
+.hover-word{
+  padding-right:23px;
+}
+
+.hover-word:active {
+  color: red;
+}
+.hover-word:hover{
+  color:red;
+}
+
+.hover-word{
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+.popup {
+  display: none;
+  position: absolute;
+  top: 27px;
+  left: -30px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 17000;
+  width:122%;
+  height:207%;
+
+}
+
+.hover-word:hover .popup {
+  display: block;
+}
+
+.popup a {
+  display: block;
+  color: blue;
+  text-decoration: none;
+  margin: 5px 0; 
+  font-size:16px;
+}
+.popup a:hover{
+  color:red;
+}
+
+
+
+
+
+
+html, body {
+    margin:0;
+    padding-top:0%;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    width: 100%;
+    height: 100%; 
+  
+    }
+
+.slideshow{
+  margin-top:96px;
+}
+.topspace{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  background-color:rgb(10, 137, 33);
+  z-index:17000;
+  
+} 
+/*....resposiveness...*/
+ /*...humburger stlying...*/
+
+.hamburger-menu {
+  display: none;
+  right: 20px;
+  top: 20px;
+}
+
+.hamburger {
+  display:none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--black);
+  margin-right:27px;
+  margin-top:20px;
+
+}
+
+@media (max-width: 1509px) {
+  .hamburger-menu {
+      display: block;
+  }
+  .hamburger {
+      display: block;
+    
+  }
+  .b {
+      display: none;
+      flex-direction: column;
+  }
+  .b.open {
+      display: flex;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y:hidden;
+}
+
+nav, .d, .b, .topspace {
+  flex-wrap: wrap;
+}
+  
+/*... Responsive styles.... */
+@media (max-width: 1920px) {
+  body {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1920px) {
+  .a {
+
+    font-size:10px;
+    flex-direction: column;
+  }}
+
+@media (max-width:768px) {
+  .a {
+
+    font-size:6px;
+    flex-direction: column;
+  }
+  .hamburger{
+    top:12%;
+    margin-top:6px;
+    font-size:22px;
+    margin-right:21px;
+      
+  }}
+  
+  @media (max-width: 1920px) {
+    .c{
+      height:30px;
+    }}
+  @media (max-width: 1920px) {
+      .text {
+       padding-top:44px;
+      }
+    }
+
+
+  
+
+
+  /*...additional styling for nav links on small screens...*/
+@media (max-width: 1509px) {
+  .b.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px; /* adjust as necessary to ensure links appear below the hamburger */
+    right: 20px; /* aligns with the hamburger button */
+    background:black;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for better aesthetics */
+    z-index: 7000;
+    
+  }
+  
+  .b.open h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .b.open a {
+    font-size: 12px;
+    padding: 5px 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+    color:white;
+  }}
+  /*------body stlying....*/
+ 
+   /* .slideshow {
+      display: block;
+      margin: 0 auto; 
+      max-width: 100%;
+      position: relative;
+      width: 100vw;
+      height: 447px;
+      object-fit: fill; 
+      overflow: hidden; 
+  }
+  
+  .sacj {
+    position:absolute;
+      width: 100vw;
+      height: 447px; 
+      object-fit: fill; 
+      transition: opacity 1s ease-in-out; 
+      opacity: 0;
+  }
+  
+  .sacj.active {
+      opacity: 1; 
+  }*/
+  .slideshow {
+    position:relative;
+    width: 100vw; /* Covers full screen width */
+    height: 447px; /* Fixed height for slideshow */
+    overflow: hidden; /* Ensures no overflow from images */
+}
+
+.sacj {
+    position: absolute; /* Allows stacking images on top of each other */
+    width: 100%; /* Full width of the slideshow container */
+    height: 447px; /* Matches the container's height */
+    object-fit: fill; /* Ensures the image covers the space without distortion */
+    opacity: 0; /* Initially hide all images */
+    transition: opacity 3s ease-in-out; /* Smooth fading effect */
+}
+@media (max-width: 768px) {
+  .sacj {
+    height:207px;
+    width:100%;
+    object-fit:fill;
+    margin-top:12px; 
+  }}
+  @media (max-width: 768px){
+    .slideshow{
+      margin-top:66px;
+    }
+    .sacj{
+      height:165px;
+    }
+    
+  }
+.sacj.active {
+    opacity: 4; /* Show the active image */}
+
+    /* Slideshow navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  font-size: 18px; /* Adjust size */
+  color: white; /* Button color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure buttons appear above images */
+  border-radius: 5px;
+}
+
+/* Left button (Previous) */
+.prev {
+  left: 10px; /* Position at far left */
+}
+
+/* Right button (Next) */
+.next {
+  right: 38px; /* Position at far right */
+}
+
+/* Add hover effect for buttons */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */}
+@media(max-width:768px){
+  .prev, .next{
+    top:114px;
+    font-size:10px;
+  }}
+
+
+
+/*-----moving text*/
+body {
+  overflow-x: hidden;
+  overflow-y:auto;
+  margin: 0;
+  }
+.moving-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 24px;
+  color: #2ecc71;
+  animation: move-left 62s linear infinite;
+}
+@keyframes move-left {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+
+.moving-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  margin-top:-16px;
+
+}
+@media(max-width:768px){
+  .blockleft, .blockright,.moving-container::after{
+    margin-top:-282px;
+  }
+}
+
+.moving-text span {
+  margin-right:60px;
+  
+  z-index:998;
+}
+@media(max-width:768px){
+  .moving-text{
+    font-size:18px;
+  }
+}
+.yt{
+  text-decoration:none;
+}
+.blockright{
+  left:0%;
+  width:29px;
+  height:43px;
+  background:rgb(207, 8, 11);
+  margin-top:-1px;
+  z-index:9000;
+}
+.blockleft{
+  position:relative;
+  left:0%;
+  width:25px;
+  height:43px;
+  background:rgb(207, 8, 11);
+  top:42px;
+  z-index:9000;
+  border-radius:2px;
+}
+@media(max-width:768px){
+  .blockleft{
+    top:21px;
+  }
+}
+@media(max-width:768px){
+  .blockleft, .blockright{
+    height:22px;
+    width:12px;
+  }
+}
+.moving-container::before,
+.moving-container::after {
+  content: ""; /* Required to make pseudo-elements visible */
+  display: block;
+  height: 2px; /* Thickness of the red line */
+  background-color: red; /* Line color */
+  width: 100%; /* Line spans the full width of the container */
+  position: absolute;
+}
+
+.moving-container::before {
+  top:15px; /* Position the top line just above the container */
+}
+
+.moving-container::after {
+  bottom:0px; /* Position the bottom line just below the container */
+}
+
+.quick{
+  margin-top:2%;
+}
+@media(max-width:768px){
+  .quick{
+    font-size:23px;
+  }
+}
+.acc{
+  margin-left:8%;
+  margin-right:8%;
+  width:auto;
+  dispaly:flex; 
+  margin-top:-16px; 
+}
+
+.abts{
+  margin-left:30%;
+  color:rgb(214, 24, 49);
+
+}
+.acd{
+  padding-right:23%;
+  font-size:22px;
+  
+
+}
+.ace{ 
+  display:flex;
+  flex-direction:column;
+  flex:9;
+}
+.sscl{
+  flex:1;
+  padding-top:933px;
+  padding:0;
+  top:0;
+  display:block;
+}
+@media (max-width:768px){
+  .sscl{
+    margin-left:1px;
+    padding:0px;
+    left:0px;
+    height:353px;
+    width:362px;
+    object-fit:fill;
+  }}
+@media (max-width:768px) {
+  .acc {
+    flex-direction: column; 
+    align-items: stretch; 
+  }}
+  @media (max-width: 768px) {
+    .acc{
+      flex-direction: column; 
+      align-items: stretch; 
+    }}
+ li{
+  font-size:23px;
+}
+.button{
+  position:relative;
+  color:blue;
+ margin-left:35%;
+ margin-right:35%;
+ margin-top:4%;
+  padding-left:6%;
+  padding-right:6%;
+  padding-top:4%;
+  padding-bottom:4%;
+  font-size:22px;
+  border-radius:9px;
+  background:rgb(17, 218, 91);
+  
+}
+@media (max-width: 768px) {
+  .button{
+   width:115px;
+   height:26px;
+  padding-left:9%;
+  padding-right:5%;
+  padding-top:2%;
+  padding-bottom:2%;
+  
+   
+  }}
+.yatch{
+  text-decoration:none;
+}
+@media(max-width){
+  .yatch{
+    font-size:12px;
+}
+}
+.schedl{
+  margin-left:57%;
+  color:rgb(214, 24, 49);
+}
+@media (max-width: 768px) {
+  .schedl{
+    margin-left:27%;
+   
+  }}
+.schedulepart{
+  display:block;
+}
+@media (max-width: 768px) {
+  .schedulepartimage{
+    margin-left:4%;
+   
+  }}
+
+.readmore{
+  position:relative;
+  z-index:2000;
+  top:-24%;
+  margin-left:41%;  
+}
+@media (max-width: 768px) {
+  .readmore{
+    margin-top:-70px;
+    margin-bottom:12%;
+    margin-left:54%;
+   
+  }}
+.schedulelink{
+  underline:none;
+  text-decoration:none;
+}
+.add{
+  margin-left:124px;
+  margin-right:114px;
+  font-size:23px;
+}
+@media (max-width: 768px) {
+  .add{
+    margin:7%;
+   
+  }}
+
+.registerwith{
+  margin-left:23%;
+  color:rgb(214, 24, 49);
+}
+@media (max-width: 768px) {
+  .registerwith{
+  margin-left:12%;
+  }}
+.regwith{
+  margin-left:2%;
+}
+.textregister{
+  font-size:24px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.lii{
+  list-style-type: none;
+  margin-left:4%;
+}
+.rg1{
+  flex:3;
+  display:block;
+}
+.rg2{
+  flex:1;
+}
+@media (max-width: 768px) {
+  .rg2{
+    object-fit:contain;
+
+  }}
+@media (max-width: 768px) {
+  .schedulesection, .regwith, .shortcut,.footerpage, .footer{
+    flex-direction: column; 
+    align-items: stretch,center; 
+  }}
+
+.thinline {
+  text-align: center;
+  position: relative;
+  top: 3%;
+  padding: 20px;
+}
+
+.thinline::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centers the red line vertically */
+  left: 0;
+}
+
+.thinlinelogo {
+  width: 30px;
+  height: 30px;
+  background: url('files/thinlinelogo.jpg') no-repeat center center;
+  background-size: contain;
+  position: absolute; /* Absolute positioning to align with the line */
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%); /* Centers the diamond on the red line */
+  
+}
+
+.ww{
+  margin-left:44%;
+  margin-top:3%;
+  color:rgb(24, 24, 214);
+}
+@media(max-width: 768px){
+  .ww{
+  margin-left:29%;
+  }
+}
+
+.ww2{
+  font-size:26px;
+  margin-left:38%;
+}
+@media(max-width: 768px){
+  .ww2{
+  margin-left:14%;
+  font-size:16px;
+  }
+}
+.shortcut{
+  margin-top:4%;
+}
+.y1{
+  display:block;
+  object:fill;
+  margin:2%;
+  flex:1; 
+}
+
+.y2{
+  display:block;
+  object:fill;
+  margin:2%;
+  flex:1;
+}
+.y3{
+  display:block;
+  object-fit:fill;
+  margin:2%;
+  flex:1;
+
+}
+.hoverimage{
+  transition: box-shadow 0.3s ease;
+}
+.hoverimage:hover{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.89);
+}
+.schedulea{
+  position:relative;
+ top:-83px;
+ color:white;
+}
+.scheduleb{
+  position:relative;
+  top:-83px;
+color:white;
+}
+.schedulec{
+  position:relative;
+  top:-60px;
+  line-height:2px;
+  color:blue;
+}
+@media(max-width:768px){
+  .schedulec{
+
+  }
+}
+.footer{
+  display:flex;
+  background:black;
+  
+  
+}
+.footer1{
+  flex:1;
+ display:block;
+ font-size:22px;
+ color:white;
+ margin-left:1%;
+ 
+}
+@media(max-width: 768px){
+  .footer{
+    display:block;
+  }
+  .footer1{
+   font-size:18px;
+  }
+}
+.footer2{
+  flex:1;
+ display:block;
+ color:white;
+ 
+}
+
+.a12x{
+  text-decoration:none;
+  font-size:22px;
+  color:white;
+}
+.a12x:hover{
+  color:red
+}
+@media(max-width: 768px){
+  .a12x{
+   font-size:18px;
+   margin-left:2%;
+  }
+}
+.footerpage{
+  display:flex;
+  background:rgba(226, 21, 21, 0.89);
+}
+.footerpart{
+  flex:6;
+  margin-left:1%;
+}
+.footertext{
+  font-size:17px;
+  color:black;
+}
+.social-icons {
+  flex:1;
+  gap: 25px;
+  list-style: none;
+  padding-top:1%;
+  margin-left:10%;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color:white;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color:blue;
+}

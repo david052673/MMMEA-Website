@@ -1,0 +1,518 @@
+:root{
+    --white: #FFFFFF;
+    --grey: #979797;
+    --red: #FF6565;
+    --black: #071629;
+    --green:rgb(7, 152, 84);
+    --blue:rgb(5, 5, 42);
+    }
+
+
+....../*Navigation styling*/........
+nav{
+    
+    display:flex;
+    background:rgba(239, 239, 245, 0.5); 
+    full-width:100%;
+    }
+
+.div{
+    display:flex;  
+   }
+.d{
+  display:flex;
+}
+.b{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:3% ;  
+    margin-right:2px;
+    flex:1.5;
+    gap:120px;
+    color:green;
+    font-size:16px;
+
+  }
+
+.a{
+    line-height: 0.4;
+    color:black;
+
+  }
+.c{
+   padding:1%;
+   height:65px;
+  }
+
+.d{
+    margin-right: auto;
+    flex:1.5;
+    font-size:12px;
+    
+  }
+
+  .aa{
+    padding-right:23px;
+ }
+
+.aa:active {
+    color: red;
+ }
+.aa:hover{
+    color:red;
+}
+
+.aa{
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+ }
+ .f{
+  background:white;
+  width:100%;
+  position:fixed;
+  top:22px;
+  z-index: 1000;
+ }
+  /*-----------styling about us nav link------*/
+  .hover-word {
+    position: relative;
+    color: rgb(32, 47, 136);
+    text-decoration: none;
+    cursor: pointer;
+    padding-right:23px;
+  }
+  
+  .hover-word{
+    padding-right:23px;
+  }
+  
+  .hover-word:active {
+    color: red;
+  }
+  .hover-word:hover{
+    color:red;
+  }
+  
+  .hover-word{
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  .popup {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: -30px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 17000;
+    width:122%;
+    height:207%;
+  
+  }
+  
+  .hover-word:hover .popup {
+    display: block;
+  }
+  
+  .popup a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+    margin: 5px 0; 
+    font-size:16px;
+  }
+  .popup a:hover{
+    color:red;
+  }
+
+
+  
+
+ html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    }
+  
+.hh1{
+    color:hsl(240, 100.00%, 1.00%);
+    font-weight: bold;
+    font-size:26px;
+  }
+  
+
+.imagz{
+    width:100%; 
+    margin-top:6%;
+    height:300px;
+     
+    
+  }
+.mebimagz{
+  width:100%; 
+  height:126px;
+  
+}
+
+.section1{
+  margin-top:30px;
+  display:flex;
+  direction:column;
+}
+.topspace{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  background-color:rgb(10, 137, 33);
+  
+}
+
+/*....resposiveness...*/
+ /*...humburger stlying...*/
+ .hamburger-menu {
+  display: none;
+  right: 20px;
+  top: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--black);
+}
+
+@media (max-width: 1509px) {
+  .hamburger-menu {
+      display: block;
+  }
+  .hamburger {
+      display: block;
+  }
+  .b {
+      display: none;
+      flex-direction: column;
+  }
+  .b.open {
+      display: flex;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+nav, .d, .b, .topspace {
+  flex-wrap: wrap;
+}
+
+
+  
+/*... Responsive styles.... */
+@media (max-width: 1920px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1920px) {
+  .a {
+
+    font-size:10px;
+    flex-direction: column;
+  }}
+  
+  @media (max-width: 1920px) {
+    .c {
+    height:50px;
+    }}
+  @media (max-width: 768px) {
+      .imagz {
+       padding-top:55px;
+       width:100%;
+       height:227px;
+       object-fit:fill;
+      }
+      .a {
+          font-size:6px;
+          flex-direction: column;
+        }
+      .c{
+        height:30px;
+      }
+    }
+@media(max-width:768px){
+  .hamburger{
+    margin-top:8px;
+    font-size:22px;
+    margin-right:33px;
+  }
+}
+  /*...additional styling for nav links on small screens...*/
+  @media (max-width: 1509px) {
+    .b.open {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 60px; 
+      right: 20px;
+      background:black;
+      padding: 10px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+      z-index: 7000;
+      
+    }    
+    .b.open h3 {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .b.open a {
+      font-size: 12px;
+      padding: 5px 0;
+      display: block;
+      width: 100%;
+      text-align: left;
+      color:white;
+    }}
+    @media(max-width:768px){
+      .imagz{
+        height:142px;
+      }
+    }
+
+    
+    .mmmeahistory{
+      margin-left:2%;
+    }
+
+
+    .vm{
+      color:blue;
+      margin-left:42px;
+    }
+    .vision{
+      display:flex;
+      direction:column;
+      align-items:center;
+      background:rgb(64, 64, 113);
+      margin-top:3%;
+    }
+    .div11{
+      margin-right:20px;
+      margin-left:5%;
+        }
+    .philosophypic{
+      margin-top:-163px;
+    }
+    .div22{
+      margin:50px;
+      margin-left:15%;
+    }
+    .div33{
+      margin-left:15%;
+    }
+    .pp2{
+      font-size:25px;
+      color:white;
+    }
+
+    @media (max-width: 768px) {
+      .vision {
+        flex-direction: column; 
+        align-items: stretch; 
+      }
+      .div11, .div22, .div33 {
+        margin: 10px auto; 
+        width: 100%; 
+      }
+      .section1 {
+        flex-direction: column;}}
+        @media (max-width: 768px) {
+          .memoryphoto {
+           padding-top:55px;
+           width:100%;
+           height:227px;
+           object-fit:fill;
+           margin-top:0%;
+          }}  
+  .first{
+    color:rgb(36, 7, 151);
+    margin-left:4%;
+    font-size:26px;
+  } 
+  .second{
+    margin-left:4%;
+  } 
+
+  .principlea{
+ display:flex;
+ margin-left:2%;
+ background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+  }
+  .principleb{
+    display:flex;
+    margin-left:2%;
+    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+  }
+
+  .principlec{
+    display:flex;
+    margin-left:2%;
+    background:green;
+    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+  }
+  .principled{
+    display:flex;
+    margin-left:2%;
+    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+  }
+  .principlee{
+    display:flex;
+    margin-left:2%;
+    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+  }
+  .pb1{
+    flex:1.5;
+padding-left:2%;
+color:rgb(245, 244, 248)
+  }
+  .pb2{
+    flex:1.5;
+    padding-left:2%;
+    color:rgb(235, 235, 236)
+  }
+  .pb3{
+    flex:1.5;
+    padding-left:2%;
+    color:rgb(242, 232, 233)
+  }
+  .pb4{
+    flex:1.5;
+  padding-left:2%;
+  color:rgb(238, 241, 238)
+  }
+  .pb5{
+    flex:1.5;
+    padding-left:2%;
+    color:rgb(230, 233, 230)
+  }
+  .pb11{
+    flex:2.5;
+
+  }
+  .pb22{
+    flex:2.5;
+    
+  }
+  .pb33{
+    flex:2.5;
+    
+  }
+  .pb44{
+    flex:2.5;
+    
+  }
+  .pb55{
+    flex:2.5;
+    
+  }
+  @media(max-width:768px){
+    .fisrt, .second,.principlea,.principleb,.principlec, .principled, .principlee{
+      font-size:14px;
+    }
+  }
+  
+  .footer{
+    display:flex;
+    background:black;
+    margin-top:5%;
+    
+  }
+  .footer1{
+    flex:1;
+   display:block;
+   font-size:22px;
+   color:white;
+   margin-left:1%;
+   
+  }
+  @media(max-width: 768px){
+    .footer{
+      display:block;
+    }
+    .footer1{
+     font-size:18px;
+    }
+  }
+  .footer2{
+    flex:1;
+   display:block;
+   color:white;
+   
+  }
+  
+  .a12x{
+    text-decoration:none;
+    font-size:22px;
+    color:white;
+  }
+  .a12x:hover{
+    color:red
+  }
+  @media(max-width: 768px){
+    .a12x{
+     font-size:18px;
+     margin-left:2%;
+    }
+  }
+  .footerpage{
+    display:flex;
+    background:rgba(226, 21, 21, 0.89);
+  }
+  .footerpart{
+    flex:6;
+    margin-left:1%;
+  }
+  .footertext{
+    font-size:17px;
+    color:black;
+  }
+  .social-icons {
+    display:flex;
+    flex:1;
+    gap: 25px;
+    list-style: none;
+    padding-top:1%;
+    margin-left:10%;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color:white;
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    color:blue;
+    
+  }
