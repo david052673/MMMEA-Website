@@ -30,6 +30,20 @@ function toggleMenu() {
   navLinks.classList.toggle('open');
 }
 
+function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  
+  // Toggle the class to show/hide the menu
+  navLinks.classList.toggle('open');
+  
+  // If the menu is opened, set a timeout to hide it
+  if (navLinks.classList.contains('open')) {
+    setTimeout(() => {
+      navLinks.classList.remove('open');
+    }, 4000); // Adjust the delay (in milliseconds) as desired
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   let slideIndex = 0; // Initialize the slide index
   const slides = document.querySelectorAll('.sacj'); // Select all slide elements

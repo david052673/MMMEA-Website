@@ -39,7 +39,7 @@ div{
   }
 .c{
    padding:1%;
-   height:65px; 
+   height:75px; 
   }
 
 .d{
@@ -128,6 +128,29 @@ div{
   .popup a:hover{
     color:red;
   }
+  @media (max-width: 768px) {
+    .popup a{
+     color:black;
+     font-size:16px;
+   }
+   .popup{
+     background-color:rgb(15, 15, 147);
+     left: -150px;
+     width:132%;
+     height:297%;
+   padding-top:-8px;
+    top:-23px;
+   }
+ 
+ .hover-word{
+   color:white;
+   font-size:13px;
+   margin-bottom:34px;
+ }
+     #popup a:hover{
+     color:red;
+   }
+   }
 
 
   
@@ -136,6 +159,7 @@ div{
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow-x:hidden;
     }
 
   .topspace{
@@ -206,24 +230,31 @@ nav, .d, .b, .topspace {
 @media (max-width: 1920px) {
   .a {
 
-    font-size:10px;
+    font-size:7px;
     flex-direction: column;
   }}
   
   @media (max-width: 1920px) {
     .c {
-    height:30px;
+    height:45px;
     }}
+    @media(max-width:768px){
+      .c{
+        height:30px;
+      }
+    }
     @media (max-width:768px) {
 
-      .hamburger{
-        margin-top:-20px;
-        font-size:22px;
-        margin-right:10px;
-          
+      .hamburger{  
+    top:2px;
+    margin-top:-19px;
+    font-size:22px;
+    margin-right:21px;
+      
+  
       }
       .a{
-        font-size:8px;
+        font-size:6px;
         }}
  
   /*...additional styling for nav links on small screens...*/
@@ -256,7 +287,11 @@ nav, .d, .b, .topspace {
       color:white;
     }}
 
-
+    @media(max-width:768px){
+      .b.open a:hover{
+       color:red;
+      }
+    }
       .image-container {
         position: relative;
         display: inline-block; /* Maintains the container's inline layout */
@@ -284,7 +319,7 @@ nav, .d, .b, .topspace {
         .cont {
           object-fit:fill;
          margin-top:63px;
-         width:524px;
+         width:394px;
          height:149px;
         }}
 
@@ -326,6 +361,12 @@ nav, .d, .b, .topspace {
     .scheduletext{
       margin-right:12%;
     }
+    @media(max-width:768px){
+      .scheduletext{
+        margin-top:88px;
+        margin-right:2%;
+      }
+    }
     .schedule2{
       display:block;
       margin-left:3%;
@@ -344,6 +385,7 @@ nav, .d, .b, .topspace {
       flex:1;
       margin-right:8%;
     }
+
  .schedulepic{
   border-radius:62px;
   height:384px;
@@ -352,6 +394,7 @@ nav, .d, .b, .topspace {
   margin-right:7%;
   
  }
+
  .schedpic {
   position: relative;
   width:334px; /* Set width for the image container */
@@ -362,6 +405,22 @@ nav, .d, .b, .topspace {
   height: 357px;
 }
 
+@media(max-width:768px){
+  .schedule{
+    
+    display:block;
+  }
+}
+@media(max-width:768px){
+  .schedulepic{
+    width:345px;
+    height:206px;
+  }
+  .overlay2{
+    width:345px;
+    height:206px;
+  }
+}
 .overlay2{
   position: absolute;
   top: 0;
@@ -389,13 +448,22 @@ nav, .d, .b, .topspace {
   font-size:29px;
 }
 .conclusion{
-  background: linear-gradient(to bottom, rgb(41, 9, 249), rgba(0, 0, 0, 0)88%);
+  background: linear-gradient(to bottom, rgb(41, 9, 249), rgba(0, 0, 0, 0)128%);
   display:block;
   
 }
 .scheduleconclusiontext{
   color:white;
   font-size:33px;
+}
+@media(max-width:768px){
+  .overlay2{
+    width:348px;
+    height:209px;
+  }
+  .conclusion{
+    margin-top:-109px;
+  }
 }
 .button4{
   font-size:27px;
@@ -408,7 +476,11 @@ nav, .d, .b, .topspace {
   text-decoration:none;
   color:black;
 }
-
+@media(max-width:768px){
+  .button4{
+    margin-left:39px;
+  }
+}
 
 .thinline {
   text-align: center;
@@ -515,7 +587,12 @@ color:white;
 .footer{
   display:flex;
   background:black;
-  margin-top:29px;
+  margin-top:2%;  
+} 
+@media(max-width:768px){
+  .footer{
+    display:block;
+  }
 }
 .footer1{
   flex:1;
@@ -525,14 +602,12 @@ color:white;
  margin-left:1%;
  
 }
-@media(max-width: 768px){
-  .footer{
-    display:block;
-  }
+@media(max-width:768px){
   .footer1{
-   font-size:18px;
+    font-size:18px;
   }
 }
+
 .footer2{
   flex:1;
  display:block;
@@ -558,6 +633,14 @@ color:white;
   display:flex;
   background:rgba(226, 21, 21, 0.89);
 }
+@media(max-width:768px){
+  .footer, .footerpage{
+    display:block;}
+    .social-icons{
+      display:flex;
+    }
+  
+}
 .footerpart{
   flex:6;
   margin-left:1%;
@@ -582,4 +665,20 @@ color:white;
 
 .social-icons a:hover {
   color:blue;
+}
+
+@media(max-width:768px){
+  .footer, .footerpage{
+    display:block;}
+    .social-icons{
+      display:flex;
+  }}
+  @media(max-width:768px){
+    .social-icons{
+      margin-left:42%;
+  }
+  .email{
+    font-size:14px;
+  }
+
 }

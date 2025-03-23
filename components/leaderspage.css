@@ -40,7 +40,7 @@ div{
   }
 .c{
    padding:1%;
-   height:65px;
+   height:75px;
   }
 
 .d{
@@ -131,6 +131,28 @@ div{
   .popup a:hover{
     color:red;
   }
+  @media (max-width: 768px) {
+    .popup a{
+     color:black;
+   }
+   .popup{
+     background-color:rgb(15, 15, 147);
+     left: -150px;
+     width:132%;
+     height:297%;
+   padding-top:-8px;
+    top:-23px;
+   }
+ 
+ .hover-word{
+   color:white;
+   font-size:13px;
+   margin-bottom:34px;
+ }
+     #popup a:hover{
+     color:red;
+   }
+   }
 
 
   
@@ -238,8 +260,13 @@ nav, .d, .b, .topspace {
   
   @media (max-width: 1920px) {
     .c{
-      height:30px;
+      height:45px;
     }}
+    @media(max-width:768px){
+      .c{
+        height:30px;
+      }
+    }
   @media (max-width: 1920px) {
       .text {
        padding-top:44px;
@@ -279,7 +306,11 @@ nav, .d, .b, .topspace {
     text-align: left;
     color:white;
   }}
-
+  @media(max-width:768px){
+    .b.open a:hover{
+     color:red;
+    }
+  }
 
         .image-container {
         position: relative;
@@ -304,7 +335,16 @@ nav, .d, .b, .topspace {
         background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)278%);
         pointer-events: none; /* Prevent interaction issues */
       }
-
+      @media(max-width:768px){
+        .image-container{
+          margin-top:12px;
+          height:264px;
+        }
+        .cont{
+          margin-top:58px;
+          height:204px;
+        }
+       }
       .leadershipoverlaytext{
         position:relative;
         top:-203px;
@@ -313,7 +353,13 @@ nav, .d, .b, .topspace {
         margin-left:13%;
         font-size:43px;
       }
-
+      @media(max-width:768px){
+        .leadershipoverlaytext{
+          font-size:32px;
+          margin-top:91px;
+          margin-left:13px;
+        }
+      }
     .leaders{
 
      margin-left:1%;
@@ -349,7 +395,7 @@ nav, .d, .b, .topspace {
         margin-bottom:3%;
       }
       .lv{
-   margin-left:33%;
+   margin-left:29%;
       }
     .lv1{
     margin-left:29%;
@@ -357,7 +403,7 @@ nav, .d, .b, .topspace {
      }
      .lv2{
         text-decoration:none;
-        margin-left:33%;
+        margin-left:40%;
      }
      .lv2:hover{
         color:red;
@@ -371,27 +417,20 @@ nav, .d, .b, .topspace {
         margin-bottom:3%;
         
       }
-      .lo{
-   margin-left:29%;
+      .ls{
+   margin-left:22%;
       }
-    .lo1{
-    margin-left:29%;
+    .ls1{
+    margin-left:38%;
     color:blue;
      }
-     .lo2{
+     .ls2{
         text-decoration:none;
-        margin-left:38%;
+        margin-left:40%;
      }
-     .lo2:hover{
+     .ls2:hover{
         color:red;
      }
-     .leader1link, .leader2link, .leader3link{
-        text-decoration:none;
-     }
-     .leader1link:hover, .leader2link:hover, .leader3link:hover{
-        color:red;
-     }
-
 
      .leader4{
         display:block;
@@ -400,11 +439,11 @@ nav, .d, .b, .topspace {
         margin-bottom:3%;
         margin-right:4%;
       }
-      .lvo{
+      .lvs{
    margin-left:25%;
       }
-    .lvo1{
-    margin-left:20%;
+    .lvs1{
+    margin-left:29%;
     color:blue;
      }
 
@@ -416,45 +455,167 @@ nav, .d, .b, .topspace {
         margin-bottom:3%;
         margin-right:4%;
       }
-      .lvs{
-   margin-left:29%;
+      .lo{
+   margin-left:17%;
       }
-    .lvs1{
-    margin-left:31%;
+    .lo1{
+    margin-left:27%;
     color:blue;
      }
- 
+     .lo2{
+      text-decoration:none;
+      margin-left:42%;
+   }
+   .lo2:hover{
+      color:red;
+   }
+     .leader1link, .leader2link, .leader3link,.leader5link{
+      text-decoration:none;
+   }
+   .leader1link:hover, .leader2link:hover, .leader3link:hover .leader5link:hover{
+      color:red;
+   }
 
      .leader6{
         display:block;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
         height:655px;
         margin-bottom:3%;
+        margin-right:1%;
         
       }
-      .lstc{
+      .lvo{
    margin-left:26%;
       }
-    .lstc1{
-    margin-left:29%;
+    .lvo1{
+    margin-left:20%;
     color:blue;
      }
 
-
-
      .leader7{
+      display:block;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+      height:655px;
+      margin-bottom:3%;
+      margin-right:6.5%;
+      
+    }
+    .lcr{
+    padding-left:22%;
+    }
+  .lcr1{
+    margin-left:21%;
+    color:blue;
+  }
+
+     .leader8{
         display:block;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
         height:655px;
         margin-bottom:3%;
+        margin-right:6%;
+        
       }
-      .lcr{
-   margin-left:29%;
+      .lcr2{
+   margin-left:28%;
       }
-    .lcr1{
-    margin-left:28%;
+    .lcr22{
+    margin-left:3.5%;
     color:blue;
      }
+
+     .leader9{
+      display:block;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+      height:655px;
+      margin-bottom:3%;
+      
+    }
+    .lstc1{
+ margin-left:37%;
+    }
+  .lstc11{
+  margin-left:28.5%;
+  color:blue;
+   }
+
+   .leader10{
+    display:block;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    height:655px;
+    margin-bottom:3%;
+    margin-right:4%;
+  }
+  .lstc2{
+margin-left:20%;
+  }
+.lstc22{
+margin-left:24%;
+color:blue;
+ }
+
+ .leader11{
+  display:block;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  height:655px;
+  margin-bottom:3%;
+  margin-right:4%;
+}
+.lstc3{
+margin-left:25%;
+}
+.lstc33{
+margin-left:20%;
+color:blue;
+}
+
+.leader12{
+  display:block;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  height:655px;
+  margin-bottom:3%;
+  margin-right:4%;
+}
+.ldc{
+margin-left:32%;
+}
+.ldc1{
+margin-left:20%;
+color:blue;
+}
+
+   @media(max-width:768px){
+    .leaders{
+      display:block;
+    }
+    .leader1{
+      margin-top:-108px;
+    }
+    .leader1,.leader2,.leader3,.leader4,.leader5,.leader6,.leader7,.leader8,,.leader9,.leader10,.leader11,.leader12,.leader13,.leader14,
+    .leader15,.leader16{
+      margin-bottom:44px;
+      margin-left:1px;
+    }
+    .leader1{
+      margin-top:-89px;
+    }
+    .leader2{
+      width:404px;
+      margin-bottom:12px;
+
+    }
+  .lc,.lc1,.lc2,.lv,.lv1,.lv2,.ls,.ls1,.ls2,.lvs,.lvs1,.lo,.lo1,.lo2,.lvo,.lvo1,
+  .lcr,.lcr1,.lcr2,.lcr22,.lstc1,.lstc11,.lstc2,.lstc22,.lstc3,.lstc33,.ldc,.ldc1{
+    margin-left:2px;
+  }
+  .lcr{
+    margin-left:2px;
+  }
+  .lo, .lcr22{
+    font-size:17px;
+  }
+  }
+
 
 /*---prevent image download---*/
 img {
@@ -495,8 +656,13 @@ img {
     .footer{
       display:flex;
       background:black;
-      margin-top:26px;
-      
+      margin-top:2%;
+         
+    } 
+    @media(max-width:768px){
+      .footer{
+        display:block;
+      }
     }
     .footer1{
       flex:1;
@@ -506,21 +672,18 @@ img {
      margin-left:1%;
      
     }
-    @media(max-width: 768px){
+    @media(max-width:768px){
       .footer1{
-       font-size:18px;
-      
+        font-size:18px;
+      }
     }
-  
-    .footer{
-      display:block;
-    }}
     .footer2{
       flex:1;
      display:block;
      color:white;
      
     }
+    
     .a12x{
       text-decoration:none;
       font-size:22px;
@@ -535,32 +698,54 @@ img {
        margin-left:2%;
       }
     }
-  .footerpage{
-    display:flex;
-    background:rgba(226, 21, 21, 0.89);
+    .footerpage{
+      display:flex;
+      background:rgba(226, 21, 21, 0.89);
+    }
+    @media(max-width:768px){
+      .footer, .footerpage{
+        display:block;}
+        .social-icons{
+          display:flex;
+        }
+      
+    }
+    .footerpart{
+      flex:6;
+      margin-left:1%;
+    }
+    .footertext{
+      font-size:17px;
+      color:black;
+    }
+    .social-icons {
+      flex:1;
+      gap: 25px;
+      list-style: none;
+      padding-top:1%;
+      margin-left:10%;
+    }
+    
+    .social-icons a {
+      text-decoration: none;
+      color:white;
+      font-size: 24px;
+    }
+    
+    .social-icons a:hover {
+      color:blue;
+    }
+    @media(max-width:768px){
+      .footer, .footerpage{
+        display:block;}
+        .social-icons{
+          display:flex;
+  }}
+  @media(max-width:768px){
+    .social-icons{
+      margin-left:42%;
   }
-  .footerpart{
-    flex:6;
-    margin-left:1%;
+  .email{
+    font-size:14px;
   }
-  .footertext{
-    font-size:17px;
-    color:black;
-  }
-  .social-icons {
-    flex:1;
-    gap: 25px;
-    list-style: none;
-    padding-top:1%;
-    margin-left:10%;
-  }
-  
-  .social-icons a {
-    text-decoration: none;
-    color:white;
-    font-size: 24px;
-  }
-  
-  .social-icons a:hover {
-    color:blue;
-  }
+}

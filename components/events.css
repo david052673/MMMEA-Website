@@ -10,7 +10,8 @@
 
 ....../*Navigation styling*/........
 nav{
-    display:flex
+    display:flex;
+    position:fixed;
 }
 
 div{
@@ -37,7 +38,7 @@ div{
   }
 .c{
    padding:1%;
-   height:65px;
+   height:75px;
   }
 
 .d{
@@ -128,6 +129,28 @@ div{
   .popup a:hover{
     color:red;
   }
+  @media (max-width: 768px) {
+    .popup a{
+     color:black;
+   }
+   .popup{
+     background-color:rgb(15, 15, 147);
+     left: -150px;
+     width:132%;
+     height:297%;
+   padding-top:-8px;
+    top:-23px;
+   }
+ 
+ .hover-word{
+   color:white;
+   font-size:13px;
+   margin-bottom:34px;
+ }
+     #popup a:hover{
+     color:red;
+   }
+   }
 
 
   
@@ -136,6 +159,8 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    margin-left:2px;
+    overflow-x:hidden;
     }
 
   .topspace{
@@ -190,26 +215,13 @@ html, body {
   }}
 @media (max-width:768px) {
 
-  .hamburger{
-    margin-top:-7px;
-    font-size:22px;
-    margin-right:10px;
-      
-  }
   .a{
-    font-size:8px;
+    font-size:6px;
   }
 }
   
 
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
 
 nav, .d, .b, .topspace {
   flex-wrap: wrap;
@@ -224,12 +236,28 @@ nav, .d, .b, .topspace {
   }
 }
 
-
   
   @media (max-width: 1920px) {
     .c {
-    height:30px;
+    height:45px;
     }}
+    @media(max-width:768px){
+      .c{
+        height:30px;
+      }}
+      @media(max-width:768px){
+        .c{
+          height:30px;
+        }
+      
+      .hamburger{
+        top:12%;
+        margin-top:-13px;
+        font-size:22px;
+        margin-right:21px;
+          
+      }
+    }
 
 
   /*...additional styling for nav links on small screens...*/
@@ -245,7 +273,7 @@ nav, .d, .b, .topspace {
       padding: 10px;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
       z-index: 7000;
-      
+      transition: all 0.3s ease;
     }
     
     .b.open h3 {
@@ -265,7 +293,19 @@ nav, .d, .b, .topspace {
     .cont{
       margin-top:70px;
     }
+    @media(max-width:768px){
+      .b.open a:hover{
+       color:red;
+      }
+    }
 
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x:hidden;
+    }
 
       .image-container {
         position: relative;
@@ -293,8 +333,8 @@ nav, .d, .b, .topspace {
       @media (max-width: 768px) {
         .cont {
           object-fit:fill;
-         margin-top:63px;
-         width:524px;
+         margin-top:50px;
+         width:374px;
          height:149px;
         }}
    .textoverlay{
@@ -304,6 +344,12 @@ nav, .d, .b, .topspace {
     color:white;
     margin-bottom:4%;
     margin-left:5%;
+    font-size:32px;
+   }
+   @media(max-width:768px){
+    .textoverlay{
+      font-size:27px;
+    }
    }
 
    .eventspagetext{
@@ -313,26 +359,58 @@ nav, .d, .b, .topspace {
    .event0{
     color:rgb(169, 16, 16)
    }
+   @media(max-width:768px){
+    .event0{
+      margin-top:54px;
+      font-size:26px;
+    }
+   }
    .event1{
      flex:9;
      margin-left:2%;
      font-size:20px;
-     color:rgb(23, 31, 26);
-     
+     color:rgb(23, 31, 26);     
    }
+
    .event2{
    flex:2;
    }
+   @media(max-width:768px){
+    .event1{
+      font-size:18px;
+    }
+   }
+  
+   @media(max-width:768px){
+    .eventspagetext{
+      display:block;
+    }
+   }
+  
    .title1{
     font-family: Comic Sans MS;
     color:rgb(7, 193, 29);
     margin-left:34%;
     font-size
    }
+   @media(max-width:768px){
+    .title1{
+      margin-left:6px;
+      margin-top:12%;
+    }
+   }
    .sportstext{
     font-size:33px;
     margin-right:93%;
     line-height:12px;
+   }
+   @media(max-width:768px){
+    .sportstext{
+      line-height:31px;
+      width:372px;
+      height:487px;
+
+    }
    }
    .sportpics{
     diplay:flex;
@@ -352,12 +430,23 @@ nav, .d, .b, .topspace {
     flex:1;
     margin:4px;
    }
+  @media(max-width:768px){
+    .sportpics{
+      display:block;
+    }
+    .sportpic3,.sportpic2,.sportpic1{
+      margin-bottom:25px;
+      width:254px;
+      height:305px;
+    }
+  }
    .outreachtext{
     padding-top:2%;
     font-size:29px;
     margin-right:12%;
     color:white;
     padding-bottom:7%;
+    margin-top:3px;
    
         
    }
@@ -368,6 +457,7 @@ nav, .d, .b, .topspace {
    .outreach{
     margin-right:2%;
    }
+
    .outreachtext2{
     flex:1;
     font-size:32PX;
@@ -377,6 +467,15 @@ nav, .d, .b, .topspace {
    }
    .outreachtpic{
     flex:6;
+   }
+   @media(max-width:768px){
+    .outreach{
+      display:block;
+    }
+    .outreachpic{
+      width:349px;
+      height:279px;
+     } 
    }
    .title2{
     font-family: Comic Sans MS;
@@ -408,17 +507,50 @@ nav, .d, .b, .topspace {
     flex:1;
     margin:4px;
    }
+   @media(max-width:768px){
+    .hikingpics{
+      display:block;
+    }
+    .hikingpic1,.hikingpic2,.hikingpic3{
+      margin-bottom:15px;
+    }
+   }
    .peering{
     background:rgb(195, 194, 198)
    }
    .peeringpic, .hikingpic3,.hikingpic2, .hikingpic1, .outreachpic, .sportpic3,.sportpic2,.sportpic1, .event2{
     border-radius: 40px;
    }
+   .peeringpic{
+    width:349px;
+    height:279px;
+   }  
+
+
    .peertext{
     margin-left:12px;
     font-size:26px;
    }
+   @media(max-width:768px){
+    .peering{
+      display:block;
+    }
+    .peeringpic, .hikingpic3,.hikingpic2, .hikingpic1, .outreachpic,.sportpic2,.sportpic1, .event2{
+      width:376px;      
+     }
+     .sportpic3{
+      width:304px;
+      height:289px;
+     }
 
+   }
+   @media(max-width:768px){
+    .peertext{
+      font-size:24px;
+    }
+
+   }
+ 
    
    .thinline {
     text-align: center;
@@ -452,8 +584,12 @@ nav, .d, .b, .topspace {
     .footer{
       display:flex;
       background:black;
-      margin-top:26px;
-      
+      margin-top:3%;   
+    } 
+    @media(max-width:768px){
+      .footer{
+        display:block;
+      }
     }
     .footer1{
       flex:1;
@@ -463,21 +599,18 @@ nav, .d, .b, .topspace {
      margin-left:1%;
      
     }
-    @media(max-width: 768px){
+    @media(max-width:768px){
       .footer1{
-       font-size:18px;
-      
+        font-size:18px;
+      }
     }
-
-    .footer{
-      display:block;
-    }}
     .footer2{
       flex:1;
      display:block;
      color:white;
      
     }
+    
     .a12x{
       text-decoration:none;
       font-size:22px;
@@ -492,32 +625,64 @@ nav, .d, .b, .topspace {
        margin-left:2%;
       }
     }
-  .footerpage{
-    display:flex;
-    background:rgba(226, 21, 21, 0.89);
+    .footerpage{
+      display:flex;
+      background:rgba(226, 21, 21, 0.89);
+    }
+    @media(max-width:768px){
+      .footer, .footerpage{
+        display:block;}
+        .social-icons{
+          display:flex;
+        }
+      
+    }
+    .footerpart{
+      flex:6;
+      margin-left:1%;
+    }
+    .footertext{
+      font-size:17px;
+      color:black;
+    }
+    .social-icons {
+      flex:1;
+      gap: 25px;
+      list-style: none;
+      padding-top:1%;
+      margin-left:10%;
+    }
+    
+    .social-icons a {
+      text-decoration: none;
+      color:white;
+      font-size: 24px;
+    }
+    
+    .social-icons a:hover {
+      color:blue;
+    }
+@media(max-width:768px){
+      .footer, .footerpage{
+        display:block;}
+        .social-icons{
+          display:flex;
+        }}
+    @media(max-width:768px){
+          .social-icons{
+            margin-left:42%;
   }
-  .footerpart{
-    flex:6;
-    margin-left:1%;
+  .email{
+    font-size:14px;
   }
-  .footertext{
-    font-size:17px;
-    color:black;
-  }
-  .social-icons {
-    flex:1;
-    gap: 25px;
-    list-style: none;
-    padding-top:1%;
-    margin-left:10%;
-  }
-  
-  .social-icons a {
-    text-decoration: none;
-    color:white;
-    font-size: 24px;
-  }
-  
-  .social-icons a:hover {
-    color:blue;
+
+}
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
   }

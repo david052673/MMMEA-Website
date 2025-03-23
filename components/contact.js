@@ -32,7 +32,17 @@ function toggleMenu() {
   const navLinks = document.getElementById('navLinks');
   navLinks.classList.toggle('open');
 }
+function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  
+  navLinks.classList.toggle('open');  
 
+  if (navLinks.classList.contains('open')) {
+    setTimeout(() => {
+      navLinks.classList.remove('open');
+    }, 4000); 
+  }
+}
 
 /*--------js for two link word----*/
 const hoverWord = document.getElementById("hoverWord");

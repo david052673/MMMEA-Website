@@ -42,7 +42,7 @@ nav{
   }
 .c{
    padding:1%;
-   height:65px;
+   height:75px;
   }
 
 .d{
@@ -132,6 +132,30 @@ nav{
   .popup a:hover{
     color:red;
   }
+  
+  @media (max-width: 768px) {
+     .popup a{
+      color:black;
+    }
+    .popup{
+      background-color:rgb(15, 15, 147);
+      left: -150px;
+      width:132%;
+      height:297%;
+    padding-top:-8px;
+     top:-23px;
+    }
+  
+  .hover-word{
+    color:white;
+    font-size:13px;
+    margin-bottom:34px;
+  }
+      #popup a:hover{
+      color:red;
+    }
+    }
+
 
 
   
@@ -141,6 +165,7 @@ nav{
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow-x:hidden;
     }
   
 .hh1{
@@ -259,11 +284,16 @@ nav, .d, .b, .topspace {
         height:30px;
       }
     }
+    @media(max-width:768px){
+      .c{
+        height:30px;
+      }
+    }
 @media(max-width:768px){
-  .hamburger{
+  .hamburger-menu{
     margin-top:8px;
     font-size:22px;
-    margin-right:33px;
+    margin-left:-33px;
   }
 }
   /*...additional styling for nav links on small screens...*/
@@ -279,7 +309,7 @@ nav, .d, .b, .topspace {
       padding: 10px;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
       z-index: 7000;
-      
+      transition: all 0.3s ease;
     }    
     .b.open h3 {
       margin: 0;
@@ -295,6 +325,13 @@ nav, .d, .b, .topspace {
       color:white;
     }}
     @media(max-width:768px){
+      .b.open a:hover{
+       color:red;
+      }
+    }
+
+
+    @media(max-width:768px){
       .imagz{
         height:142px;
       }
@@ -303,6 +340,8 @@ nav, .d, .b, .topspace {
     
     .mmmeahistory{
       margin-left:2%;
+      font-family:Roboto, Arial, sans-serif;
+      font-size:25px;
     }
 
 
@@ -340,18 +379,28 @@ nav, .d, .b, .topspace {
       .vision {
         flex-direction: column; 
         align-items: stretch; 
+        
       }
-      .div11, .div22, .div33 {
-        margin: 10px auto; 
+      .div11{
+        margin: 180px auto; 
         width: 100%; 
       }
+      .div22{
+        margin:-142px auto; 
+        width: 100%;
+      }
+       .div33{
+        margin: 178px auto; 
+        width: 100%;
+        margin-bottom:23px;
+       }
       .section1 {
         flex-direction: column;}}
         @media (max-width: 768px) {
           .memoryphoto {
-           padding-top:55px;
+           padding-top:7px;
            width:100%;
-           height:227px;
+           height:327px;
            object-fit:fill;
            margin-top:0%;
           }}  
@@ -367,29 +416,39 @@ nav, .d, .b, .topspace {
   .principlea{
  display:flex;
  margin-left:2%;
- background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+ background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0)179%);
   }
   .principleb{
     display:flex;
     margin-left:2%;
-    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0)179%);
   }
 
   .principlec{
     display:flex;
     margin-left:2%;
     background:green;
-    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0)179%);
   }
   .principled{
     display:flex;
     margin-left:2%;
-    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0)179%);
   }
   .principlee{
     display:flex;
     margin-left:2%;
-    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0));
+    background: linear-gradient(to right,rgb(19, 81, 4), rgba(126, 106, 26, 0)179%);
+  }
+  @media(max-width:768px){
+    .fisrt, .second,.principlea,.principleb,.principlec, .principled, .principlee{
+      font-size:14px;
+    }
+  }
+  @media(max-width:768px){
+    .principlea, .principleb, .principlec, .principled, .principlee{
+      display:block;
+    }
   }
   .pb1{
     flex:1.5;
@@ -436,17 +495,17 @@ color:rgb(245, 244, 248)
     flex:2.5;
     
   }
-  @media(max-width:768px){
-    .fisrt, .second,.principlea,.principleb,.principlec, .principled, .principlee{
-      font-size:14px;
-    }
-  }
+
   
   .footer{
     display:flex;
     background:black;
-    margin-top:5%;
-    
+    margin-top:3%;   
+  } 
+  @media(max-width:768px){
+    .footer{
+      display:block;
+    }
   }
   .footer1{
     flex:1;
@@ -456,14 +515,12 @@ color:rgb(245, 244, 248)
    margin-left:1%;
    
   }
-  @media(max-width: 768px){
-    .footer{
-      display:block;
-    }
+  @media(max-width:768px){
     .footer1{
-     font-size:18px;
+      font-size:18px;
     }
   }
+  
   .footer2{
     flex:1;
    display:block;
@@ -489,6 +546,14 @@ color:rgb(245, 244, 248)
     display:flex;
     background:rgba(226, 21, 21, 0.89);
   }
+  @media(max-width:768px){
+    .footer, .footerpage{
+      display:block;}
+      .social-icons{
+        display:flex;
+      }
+    
+  }
   .footerpart{
     flex:6;
     margin-left:1%;
@@ -498,12 +563,12 @@ color:rgb(245, 244, 248)
     color:black;
   }
   .social-icons {
-    display:flex;
     flex:1;
     gap: 25px;
     list-style: none;
     padding-top:1%;
     margin-left:10%;
+    display:flex;
   }
   
   .social-icons a {
@@ -514,5 +579,19 @@ color:rgb(245, 244, 248)
   
   .social-icons a:hover {
     color:blue;
-    
   }
+  @media(max-width:768px){
+    .footer, .footerpage{
+      display:block;}
+      .social-icons{
+        display:flex;
+      }}
+  @media(max-width:768px){
+        .social-icons{
+          margin-left:42%;
+          
+      }
+      .email{
+        font-size:14px;
+      }
+    }
